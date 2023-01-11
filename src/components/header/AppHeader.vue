@@ -16,7 +16,24 @@ export default {
 
 
 <style lang="scss" scoped>
-img {
-    width: 50px;
+@use '../../style/partials/variables' as *;
+
+header {
+    background-color: $secondary--text-color;
+    color: $primary--text-color;
+    padding: 1rem 0;
+
+    .img-container {
+        padding: 0 1.5rem;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 2.5rem;
+    }
 }
 </style>
