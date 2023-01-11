@@ -81,16 +81,16 @@ main {
             text-align: center;
         }
 
-        .cards-number {
-            background-color: $primary--text-color;
-            color: $secondary--text-color;
-            padding: 1.5rem 1rem;
-            font-weight: bold;
-        }
-
         .container {
             background-color: $secondary--text-color;
             padding: 3.3rem;
+
+            .cards-number {
+                background-color: $primary--text-color;
+                color: $secondary--text-color;
+                padding: 1.5rem 1rem;
+                font-weight: bold;
+            }
         }
     }
 }
