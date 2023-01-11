@@ -4,7 +4,7 @@ import AppMain from './components/main/AppMain.vue';
 
 
 export default {
-    conponents: {
+    components: {
         AppHeader,
         AppMain,
     }
@@ -19,5 +19,5 @@ export default {
 
 
 <style lang="scss">
-@use './styles/general.scss' as *;
+@use './style/general.scss' as *;
 </style>
