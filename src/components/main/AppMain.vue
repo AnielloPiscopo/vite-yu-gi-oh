@@ -1,5 +1,6 @@
 <script>
 import SingleCard from './SingleCard.vue';
+import AppLoader from './../other/AppLoader.vue';
 import { store } from './../../store';
 import axios from 'axios';
 
@@ -9,11 +10,14 @@ export default {
 
     components: {
         SingleCard,
+        AppLoader,
     },
 
     data() {
         return {
-            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0',
+            numOfCards: 10,
+            offsetNum: 0,
+            apiUrl: `https://db.ygoprodeck.com/api/v7/cardinfo.php`,
             store,
         }
     },
@@ -21,7 +25,10 @@ export default {
     methods: {
         getCardInfo() {
             axios.get(this.apiUrl, {
-                params: {}
+                params: {
+                    num: this.numOfCards,
+                    offset: this.offsetNum,
+                }
             })
                 .then(response => {
                     this.store.cardsList = response.data.data;
@@ -43,15 +50,17 @@ export default {
 
 <template>
     <main>
-        <div class="container">
-            <div class="container">
-                <div class="cards-number">Found {{ store.cardsList.length }} cards</div>
+        <div class="container" :class="(store.cardsList.length !== numOfCards) ? 'loader-container' : ''">
+            <div v-if="store.cardsList.length === numOfCards" class="container">
+                <div class="cards-number">Found {{ store.cardsList.length }}
+                    cards</div>
                 <div class="cards-container d-flex wrap js-center">
                     <SingleCard v-for="card in store.cardsList" :cardId="card.id"
                         :imgUrl="card.card_images[0].image_url" :imgId="card.card_images[0].id"
                         :cardArchetype="card.archetype" :cardName="card.name" />
                 </div>
             </div>
+            <AppLoader v-else />
         </div>
     </main>
 </template>
@@ -67,6 +76,10 @@ main {
 
     >.container {
         padding: 1rem 8.2rem;
+
+        &.loader-container {
+            text-align: center;
+        }
 
         .cards-number {
             background-color: $primary--text-color;
