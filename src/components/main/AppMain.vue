@@ -45,8 +45,8 @@ export default {
     <main>
         <div class="container">
             <div class="container">
-                <span>Found {{ store.cardsList.length }} cards</span>
-                <div class="cards-container d-flex wrap">
+                <div class="cards-number">Found {{ store.cardsList.length }} cards</div>
+                <div class="cards-container d-flex wrap js-center">
                     <SingleCard v-for="card in store.cardsList" :cardId="card.id"
                         :imgUrl="card.card_images[0].image_url" :imgId="card.card_images[0].id"
                         :cardArchetype="card.archetype" :cardName="card.name" />
@@ -58,5 +58,27 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../../style/partials/variables' as *;
 
+
+
+main {
+    background-color: $primary--bg-color;
+
+    >.container {
+        padding: 1rem 8.2rem;
+
+        .cards-number {
+            background-color: $primary--text-color;
+            color: $secondary--text-color;
+            padding: 1.5rem 1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: $secondary--text-color;
+            padding: 3.3rem;
+        }
+    }
+}
 </style>
