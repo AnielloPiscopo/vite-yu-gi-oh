@@ -24,7 +24,8 @@ export default {
                 params: {}
             })
                 .then(response => {
-                    this.store.cardsList = response.data.data
+                    this.store.cardsList = response.data.data;
+                    console.log(response.data.data);
                 })
 
                 .catch(err => {
@@ -44,9 +45,11 @@ export default {
     <main>
         <div class="container">
             <div class="container">
-                <span>shish</span>
-                <div class="cards-container">
-                    <SingleCard v-for="card in store.cardsList" :cardId="card.id" />
+                <span>Found {{ store.cardsList.length }} cards</span>
+                <div class="cards-container d-flex wrap">
+                    <SingleCard v-for="card in store.cardsList" :cardId="card.id"
+                        :imgUrl="card.card_images[0].image_url" :imgId="card.card_images[0].id"
+                        :cardArchetype="card.archetype" :cardName="card.name" />
                 </div>
             </div>
         </div>
