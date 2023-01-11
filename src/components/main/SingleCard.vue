@@ -6,9 +6,9 @@ export default {
 
 
 <template>
-    <div>
+    <article>
         lol
-    </div>
+    </article>
 </template>
 
 
