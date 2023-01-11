@@ -1,5 +1,6 @@
 <script>
 import SingleCard from './SingleCard.vue';
+import { store } from './../../store';
 import axios from 'axios';
 
 
@@ -13,6 +14,7 @@ export default {
     data() {
         return {
             apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0',
+            store,
         }
     },
 
@@ -22,7 +24,7 @@ export default {
                 params: {}
             })
                 .then(response => {
-                    console.log(response.data.data);
+                    this.store.cardsList = response.data.data
                 })
 
                 .catch(err => {
@@ -44,7 +46,7 @@ export default {
             <div class="container">
                 <span>shish</span>
                 <div class="cards-container">
-                    <SingleCard />
+                    <SingleCard v-for="card in store.cardsList" :cardId="card.id" />
                 </div>
             </div>
         </div>

@@ -1,13 +1,25 @@
 <script>
+import { store } from './../../store';
+
 export default {
     name: 'SingleCard',
+
+    data() {
+        return {
+            store,
+        }
+    },
+
+    props: {
+        cardId: Number,
+    }
 }
 </script>
 
 
 <template>
     <article>
-        lol
+        {{ cardId }}
     </article>
 </template>
 
