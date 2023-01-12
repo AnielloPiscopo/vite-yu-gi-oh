@@ -45,7 +45,7 @@ export default {
 article {
     width: calc(100%/5 - 2rem);
     background-color: $primary--bg-color;
-    margin: 1rem;
+    margin-bottom: 1rem;
     cursor: pointer;
 
     &:hover {
@@ -70,7 +70,7 @@ article {
         padding: 1rem;
 
         &.card-archetype {
-            padding-bottom: 0;
+            padding-bottom: 0.5rem;
             font-size: 1.2rem;
 
             &:hover {

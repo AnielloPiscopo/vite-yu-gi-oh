@@ -25,7 +25,7 @@ export default {
     <div v-if="store.cardsList.length === store.numOfCards" class="container">
         <div class="cards-number">Found {{ store.cardsList.length }}
             cards</div>
-        <div class="cards-container d-flex wrap js-center">
+        <div class="cards-container d-flex wrap js-between">
             <SingleCard v-for="card in store.cardsList" :cardId="card.id" :imgUrl="card.card_images[0].image_url"
                 :imgId="card.card_images[0].id" :cardArchetype="card.archetype" :cardName="card.name" />
         </div>
