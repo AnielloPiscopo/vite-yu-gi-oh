@@ -22,7 +22,7 @@ export default {
 
 
 <template>
-    <main>
+    <main @change="$emit('cardArchetypeSearch')">
         <div class="container" :class="(store.cardsList.length !== store.numOfCards) ? 'loader-container' : ''">
             <CardsArchetypeSelectField />
             <CardsContainer />

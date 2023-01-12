@@ -24,7 +24,7 @@ export default {
                 params: {
                     num: this.store.numOfCards,
                     offset: this.store.offsetNum,
-                    archetype: 'Gusto',
+                    archetype: this.store.activeArchetype,
                 }
             })
                 .then(response => {
@@ -47,7 +47,7 @@ export default {
 
 <template>
     <AppHeader />
-    <AppMain />
+    <AppMain @cardArchetypeSearch="getCardInfo" />
 </template>
 
 

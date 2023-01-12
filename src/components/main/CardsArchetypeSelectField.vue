@@ -10,14 +10,14 @@ export default {
         return {
             store,
         }
-    }
+    },
 }
 </script>
 
 
 <template>
-    <select name="cards-archetype" id="cards-archetype">
-        <option value="void">None</option>
+    <select name="cards-archetype" id="cards-archetype" v-model="store.activeArchetype">
+        <option :value="undefined">None</option>
         <option v-for="archetype in store.archetypes" :value="archetype">{{ archetype }}</option>
     </select>
 </template>
