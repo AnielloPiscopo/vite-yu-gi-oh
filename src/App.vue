@@ -24,6 +24,7 @@ export default {
                 params: {
                     num: this.store.numOfCards,
                     offset: this.store.offsetNum,
+                    archetype: 'Gusto',
                 }
             })
                 .then(response => {

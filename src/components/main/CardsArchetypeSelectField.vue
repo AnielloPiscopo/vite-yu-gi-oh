@@ -1,10 +1,14 @@
 <script>
+import { store } from './../../store';
+
+
+
 export default {
     name: 'CardsArchetypeSelectField',
 
     data() {
         return {
-            archetypes: ['Alien', 'Laval', 'Vylon', 'Inzektor', 'Umi', 'Gusto'],
+            store,
         }
     }
 }
@@ -13,7 +17,8 @@ export default {
 
 <template>
     <select name="cards-archetype" id="cards-archetype">
-        <option v-for="archetype in archetypes" :value="archetype">{{ archetype }}</option>
+        <option value="void">None</option>
+        <option v-for="archetype in store.archetypes" :value="archetype">{{ archetype }}</option>
     </select>
 </template>
 
