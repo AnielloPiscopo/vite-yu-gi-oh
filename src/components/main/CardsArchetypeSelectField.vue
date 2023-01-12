@@ -6,7 +6,10 @@ export default {
 
 
 <template>
-    <div>shsih</div>
+    <select name="cards-archetype" id="cards-archetype">
+        <option value="--">Choose your archetype</option>
+        <option value="">hsih</option>
+    </select>
 </template>
 
 
