@@ -1,5 +1,6 @@
 <script>
 import { store } from './../../store';
+import CardsArchetypeSelectField from './CardsArchetypeSelectField.vue';
 import CardsContainer from './CardsContainer.vue';
 
 
@@ -7,6 +8,7 @@ export default {
     name: 'AppMain',
 
     components: {
+        CardsArchetypeSelectField,
         CardsContainer,
     },
 
@@ -22,6 +24,7 @@ export default {
 <template>
     <main>
         <div class="container" :class="(store.cardsList.length !== store.numOfCards) ? 'loader-container' : ''">
+            <CardsArchetypeSelectField />
             <CardsContainer />
         </div>
     </main>
@@ -37,7 +40,7 @@ main {
     background-color: $primary--bg-color;
 
     >.container {
-        padding: 1rem 8.2rem;
+        padding: 1.7rem 8.2rem;
     }
 }
 </style>
