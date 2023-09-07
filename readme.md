@@ -27,15 +27,9 @@
 
 ## 📒 Table of Contents
 - [📒 Table of Contents](#-table-of-contents)
-- [📍 Overview](#-overview)
-- [⚙️ Features](#-features)
-- [📂 Project Structure](#project-structure)
 - [🧩 Modules](#modules)
 - [🚀 Getting Started](#-getting-started)
-- [🗺 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [👏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -45,21 +39,21 @@
 
 | File                                                                                                                                         | Summary                   |
 | ---                                                                                                                                          | ---                       |
-| [index.html](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/index.html)                                                           | HTTPStatus Exception: 429 |
-| [vite.config.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/vite.config.js)                                                   | HTTPStatus Exception: 429 |
-| [App.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\App.vue)                                                             | HTTPStatus Exception: 429 |
-| [main.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\main.js)                                                             | HTTPStatus Exception: 429 |
-| [store.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\store.js)                                                           | HTTPStatus Exception: 429 |
-| [AppHeader.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\header\AppHeader.vue)                               | HTTPStatus Exception: 429 |
-| [AppMain.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\AppMain.vue)                                     | HTTPStatus Exception: 429 |
-| [CardsArchetypeSelectField.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\CardsArchetypeSelectField.vue) | HTTPStatus Exception: 429 |
-| [CardsContainer.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\CardsContainer.vue)                       | HTTPStatus Exception: 429 |
-| [SingleCard.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\SingleCard.vue)                               | HTTPStatus Exception: 429 |
-| [AppLoader.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\other\AppLoader.vue)                                | HTTPStatus Exception: 429 |
-| [general.css](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.css)                                               | HTTPStatus Exception: 429 |
-| [general.css.map](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.css.map)                                       | HTTPStatus Exception: 429 |
-| [general.scss](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.scss)                                             | HTTPStatus Exception: 429 |
-| [_variables.scss](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\partials\_variables.scss)                              | HTTPStatus Exception: 429 |
+| [index.html](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/index.html)                                                           | This is the main HTML entry point for your web application. It's where you define the structure of your HTML document, include CSS and JavaScript files, and specify the root element where the Vue.js application will be mounted.|
+| [vite.config.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/vite.config.js)                                                   | This is a configuration file used with Vite, which is a build tool and development server designed for modern web development. |
+| [App.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\App.vue)                                                             | This is the base of the work and it serves as the root component of the Vue.js application and contains the overall layout, navigation, and the top-level structure of your app. |
+| [main.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\main.js)                                                             | This file is the entry point of the application. It's where you create and configure the Vue instance, set up routing (if used), and specify which component to render in the root DOM element |
+| [store.js](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\store.js)                                                           | This file contains the global and general variables and functions of the work. |
+| [AppHeader.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\header\AppHeader.vue)                               | This is the component that represents the header tag of the webpage. |
+| [AppMain.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\AppMain.vue)                                     | This is the component that represents the main tag of the webpage. |
+| [CardsArchetypeSelectField.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\CardsArchetypeSelectField.vue) | This is the component that represents the filter field of the webpage containing the various archetypes of the yu-gi-oh cards. |
+| [CardsContainer.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\CardsContainer.vue)                       | This is the component that represents the container of the yu-gi-oh cards. |
+| [SingleCard.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\main\SingleCard.vue)                               | This is the component that represents a single yu-gi-oh card. |
+| [AppLoader.vue](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\components\other\AppLoader.vue)                                | This is the component that represents the loader of the application. |
+| [general.css](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.css)                                               | This is the file css that contains the general style of the work. |
+| [general.css.map](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.css.map)                                       | This is a source map file generated by SASS. |
+| [general.scss](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\general.scss)                                             | This is the file scss that contains the general style of the work. |
+| [_variables.scss](https://github.com/AnielloPiscopo/vite-yu-gi-oh/blob/main/src\style\partials\_variables.scss)                              | This is the file scss that contains the general stylistic variables of the work. |
 
 </details>
 
