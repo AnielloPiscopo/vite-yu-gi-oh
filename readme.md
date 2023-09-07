@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/Vue.js-4FC08D.svg?style&logo=vuedotjs&logoColor=white" width="100" />
 <br>VITE-YU-GI-OH
 </h1>
-<h3>◦ Container of yu-gi-oh cards with filters available</h3>
+<h3>◦ Container of yu-gi-oh cards with filter available based on their archetypes</h3>
 <h3>◦ Developed during the course of Full-Stack Web Developer with Boolean</h3>
 <h3>◦ Link: https://aniellopiscopo.github.io/vite-yu-gi-oh/
 </h3>
