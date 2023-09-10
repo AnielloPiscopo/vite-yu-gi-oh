@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-<img src="https://img.shields.io/badge/Vue.js-4FC08D.svg?style&logo=vuedotjs&logoColor=white" width="100" />
+<img src="https://img.shields.io/badge/Vite-646CFF.svg?style&logo=Vite&logoColor=white" alt="Vite" width="100" />
 <br>VITE-YU-GI-OH
 </h1>
 <h3>◦ Container of yu-gi-oh cards with filter available based on their archetypes</h3>
